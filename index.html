@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Alex Dorisse</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fond -->
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Hero -->
+  <header class="hero" id="top">
+    <nav class="nav">
+      <a class="brand" href="#top">
+        <span class="brand-dot"></span>
+        <span class="brand-text">AlexDorisse</span>
+      </a>
+      <div class="nav-links">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-inner reveal">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        <span>Portfolio — Audiovisuel & Communication</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="accent">Alex</span> Dorisse
+      </h1>
+
+      <p class="hero-sub" id="typing" data-typing="Étudiant en BUT Métiers du Multimédia et de l'Internet"></p>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#projects">
+          Voir mes projets
+          <span class="btn-glow" aria-hidden="true"></span>
+        </a>
+        <a class="btn btn-ghost" href="cv.pdf" target="_blank" rel="noopener">
+          Télécharger mon CV
+        </a>
+      </div>
+
+      <div class="hero-spacer"></div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- À propos -->
+    <section class="section reveal" id="about">
+      <div class="section-head">
+        <h2>À propos</h2>
+        <p class="section-desc">
+          Passionné par l’audiovisuel et la communication, je transforme mes idées en expériences visuelles immersives.
+          Je cherche un équilibre entre storytelling, esthétique moderne et impact.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card">
+          <h3>Ce que j’aime</h3>
+          <p>Les univers minimalistes avec une touche futuriste et des animations subtiles, qui renforcent le message.</p>
+        </div>
+
+        <div class="glass-card">
+          <h3>Logiciels</h3>
+          <p>Premiere Pro • After Effects • DaVinci • Canva</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section class="section reveal" id="skills">
+      <div class="section-head">
+        <h2>Compétences</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-top">
+            <span class="chip">Montage</span>
+            <span class="meter" style="--w: 85%"></span>
+          </div>
+          <h3>Montage vidéo</h3>
+          <p>A travers la maîtrise de différents logiciels.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-top">
+            <span class="chip">Motion</span>
+            <span class="meter" style="--w: 75%"></span>
+          </div>
+          <h3>Motion Design</h3>
+          <p>Élaborations de transitions, titres animés...</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-top">
+            <span class="chip">Com</span>
+            <span class="meter" style="--w: 70%"></span>
+          </div>
+          <h3>Communication visuelle</h3>
+          <p>Réalisation de supports de com avec du branding et de la cohérence graphique.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-top">
+            <span class="chip">Créa</span>
+            <span class="meter" style="--w: 78%"></span>
+          </div>
+          <h3>Direction artistique</h3>
+          <p>Palette, typographies, moodboards...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section class="section reveal" id="projects">
+      <div class="section-head">
+        <h2>Mes Projets</h2>
+        <p class="section-desc">Sélection de travaux (image, montage et vidéo).</p>
+      </div>
+
+      <div class="projects-container">
+        <article class="project">
+          <div class="media">
+            <img src="projects/projet1/01.jpg" alt="Dossier de Presse">
+          </div>
+          <div class="content">
+            <h3>Dossier de Presse</h3>
+            <p>Fashion Week - Jacquemus</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="media">
+            <img src="projects/projet2/01.jpg" alt="Campagne de communication">
+          </div>
+          <div class="content">
+            <h3>Campagne de communication</h3>
+            <p>Print - TL7</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="media">
+            <img src="projects/projet3/01.jpg" alt="Charte Graphique">
+          </div>
+          <div class="content">
+            <h3>Charte Graphique</h3>
+            <p>Wedding Planner fictif</p>
+          </div>
+        </article>
+
+        <article class="project video-project">
+          <div class="media">
+            <video controls poster="projects/video-preview.jpg" preload="metadata">
+              <source src="projects/monclip.mp4" type="video/mp4">
+              Votre navigateur ne supporte pas la lecture vidéo.
+            </video>
+          </div>
+          <div class="content">
+            <h3>Rapport d'activités</h3>
+            <p>OPHIS Puy-de-Dôme</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section class="section reveal" id="cv">
+      <div class="section-head">
+        <h2>Mon CV</h2>
+        <p class="section-desc">Un résumé clair de mon parcours et de mes expériences.</p>
+      </div>
+
+      <div class="cv-wrap">
+        <div class="glass-card cv-text">
+          <a class="btn btn-primary" href="cv.pdf" target="_blank" rel="noopener">
+            Télécharger mon CV
+            <span class="btn-glow" aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div class="cv-preview">
+          <img src="images/cv-preview.jpg" alt="Aperçu du CV">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section reveal" id="contact">
+      <div class="section-head">
+        <h2>Me contacter</h2>
+        <p class="section-desc">Un message rapide et je reviens vers vous.</p>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-icons">
+          <a href="mailto:alexdorisse@icloud.com" class="contact-icon" title="Envoyer un mail">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M12 13.065L.001 6h23.998L12 13.065zm0 2.935L0 8.935V20h24V8.935l-12 7.065z"/>
+            </svg>
+            <span>Email</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/alex-dorisse-430ab3246" target="_blank" rel="noopener noreferrer" class="contact-icon" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S.02 4.88.02 3.5C.02 2.12 1.13 1 2.5 1s2.48 1.12 2.48 2.5zM5 8H0v16h5V8zm7 0H7v16h5v-8.25c0-4.61 6-4.98 6 0V24h5V13.5C23 5 14 5.313 13 9.499V8z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/xvzkppjq" method="POST">
+          <input type="text" name="name" placeholder="Nom" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" rows="6" placeholder="Votre message" required></textarea>
+          <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+
+          <button type="submit" class="btn btn-primary">
+            Envoyer
+            <span class="btn-glow" aria-hidden="true"></span>
+          </button>
+
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> — Alex Dorisse</span>
+      <a href="#top">Retour en haut</a>
+    </div>
+  </footer>
+
+  <!-- Lightbox projets -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Fermer">×</button>
+    <div class="lb-frame" role="dialog" aria-modal="true">
+      <button class="lb-nav lb-prev" id="lbPrev" aria-label="Précédent">‹</button>
+      <div class="lb-media" id="lbMedia"></div>
+      <button class="lb-nav lb-next" id="lbNext" aria-label="Suivant">›</button>
+    </div>
+    <div class="lb-caption" id="lbCaption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
